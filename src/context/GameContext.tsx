@@ -207,10 +207,24 @@ export const GameProvider: React.FC<{ children: React.ReactNode }> = ({ children
   // Check authentication status and load user progress
   useEffect(() => {
     let isMounted = true;
+    let timeoutId: NodeJS.Timeout;
 
     const checkAuth = async () => {
       try {
+        // Set a timeout to prevent infinite loading
+        timeoutId = setTimeout(() => {
+          if (isMounted) {
+            console.log('Auth check timeout, setting loading to false');
+            setLoading(false);
+            setIsAuthenticated(false);
+          }
+        }, 10000); // 10 second timeout
+
         const { data: { session }, error } = await supabase.auth.getSession();
+        
+        if (timeoutId) {
+          clearTimeout(timeoutId);
+        }
         
         if (error) {
           console.error('Error getting session:', error);
@@ -247,22 +261,32 @@ export const GameProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
       console.log('Auth state changed:', event, session?.user?.id);
 
-      if (event === 'SIGNED_IN' && session?.user) {
-        setIsAuthenticated(true);
-        await loadUserProgress(session.user.id);
-        setLoading(false);
-      } else if (event === 'SIGNED_OUT') {
-        setIsAuthenticated(false);
-        dispatch({ type: 'RESET_USER_PROGRESS' });
-        setLoading(false);
-      } else if (event === 'TOKEN_REFRESHED' && session?.user) {
-        // Don't change loading state for token refresh
-        setIsAuthenticated(true);
+      try {
+        if (event === 'SIGNED_IN' && session?.user) {
+          setIsAuthenticated(true);
+          await loadUserProgress(session.user.id);
+          setLoading(false);
+        } else if (event === 'SIGNED_OUT') {
+          setIsAuthenticated(false);
+          dispatch({ type: 'RESET_USER_PROGRESS' });
+          setLoading(false);
+        } else if (event === 'TOKEN_REFRESHED' && session?.user) {
+          // Don't change loading state for token refresh
+          setIsAuthenticated(true);
+        }
+      } catch (error) {
+        console.error('Error in auth state change handler:', error);
+        if (isMounted) {
+          setLoading(false);
+        }
       }
     });
 
     return () => {
       isMounted = false;
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
       subscription.unsubscribe();
     };
   }, []);

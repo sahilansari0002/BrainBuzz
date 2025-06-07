@@ -1,10 +1,4 @@
-import { easyQuestions } from './easyQuestions';
-import { mediumQuestions } from './mediumQuestions';
-import { hardQuestions } from './hardQuestions';
-import { Question } from '../../types';
+// This file is now simplified - we use the main allQuestions.ts file
+import { completeQuestionBank } from '../allQuestions';
 
-export const allQuestions: Question[] = [
-  ...easyQuestions,
-  ...mediumQuestions,
-  ...hardQuestions
-];
+export const allQuestions = completeQuestionBank;

@@ -76,16 +76,6 @@ export const easyQuestions: Question[] = [
   },
   {
     id: uuidv4(),
-    text: "What is the capital of India?",
-    options: ["Mumbai", "Chennai", "Kolkata", "New Delhi"],
-    correctAnswer: 3,
-    explanation: "New Delhi is the capital city of India.",
-    topic: "geography",
-    difficulty: "easy",
-    ageGroups: ["kids", "teens", "adults"]
-  },
-  {
-    id: uuidv4(),
     text: "Which animal gives us wool?",
     options: ["Cow", "Sheep", "Goat", "Pig"],
     correctAnswer: 1,
@@ -483,16 +473,6 @@ export const easyQuestions: Question[] = [
     topic: "general knowledge",
     difficulty: "easy",
     ageGroups: ["kids", "teens"]
-  },
-  {
-    id: uuidv4(),
-    text: "What is the capital city of India?",
-    options: ["Mumbai", "Delhi", "Kolkata", "Chennai"],
-    correctAnswer: 1,
-    explanation: "New Delhi is the capital of India.",
-    topic: "india special",
-    difficulty: "easy",
-    ageGroups: ["teens", "adults"]
   },
   {
     id: uuidv4(),
