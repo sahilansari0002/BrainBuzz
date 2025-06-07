@@ -3,16 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 export const easyQuestions: Question[] = [
   // Astronomy Questions
-  {
-    id: uuidv4(),
-    text: "Which planet is known as the Red Planet?",
-    options: ["Earth", "Mars", "Jupiter", "Venus"],
-    correctAnswer: 1,
-    explanation: "Mars is called the Red Planet because it appears red from iron oxide (rust) on its surface.",
-    topic: "astronomy",
-    difficulty: "easy",
-    ageGroups: ["kids", "teens", "adults"]
-  },
+
   {
     id: uuidv4(),
     text: "What is the capital city of Japan?",
@@ -22,36 +13,6 @@ export const easyQuestions: Question[] = [
     topic: "geography",
     difficulty: "easy",
     ageGroups: ["kids", "teens", "adults"]
-  },
-  {
-    id: uuidv4(),
-    text: "How many legs does a spider have?",
-    options: ["6", "8", "10", "4"],
-    correctAnswer: 1,
-    explanation: "Spiders are arachnids and have 8 legs.",
-    topic: "biology",
-    difficulty: "easy",
-    ageGroups: ["kids", "teens", "adults"]
-  },
-  {
-    id: uuidv4(),
-    text: "Which number comes after 99?",
-    options: ["98", "100", "101", "99"],
-    correctAnswer: 1,
-    explanation: "100 comes after 99 in counting.",
-    topic: "math",
-    difficulty: "easy",
-    ageGroups: ["kids"]
-  },
-  {
-    id: uuidv4(),
-    text: "What device is used to type letters into a computer?",
-    options: ["Monitor", "Mouse", "Keyboard", "Scanner"],
-    correctAnswer: 2,
-    explanation: "A keyboard is used to input text into a computer.",
-    topic: "computers",
-    difficulty: "easy",
-    ageGroups: ["kids", "teens"]
   },
   {
     id: uuidv4(),
@@ -70,16 +31,6 @@ export const easyQuestions: Question[] = [
     correctAnswer: 0,
     explanation: "The US Dollar is the official currency of the United States.",
     topic: "general knowledge",
-    difficulty: "easy",
-    ageGroups: ["kids", "teens", "adults"]
-  },
-  {
-    id: uuidv4(),
-    text: "Which festival is known as the Festival of Lights in India?",
-    options: ["Holi", "Diwali", "Eid", "Christmas"],
-    correctAnswer: 1,
-    explanation: "Diwali is celebrated as the Festival of Lights across India.",
-    topic: "india special",
     difficulty: "easy",
     ageGroups: ["kids", "teens", "adults"]
   },
@@ -195,16 +146,6 @@ export const easyQuestions: Question[] = [
   },
   {
     id: uuidv4(),
-    text: "Who was the first Prime Minister of India?",
-    options: ["Lal Bahadur Shastri", "Indira Gandhi", "Jawaharlal Nehru", "Mahatma Gandhi"],
-    correctAnswer: 2,
-    explanation: "Jawaharlal Nehru was the first Prime Minister of independent India.",
-    topic: "india special",
-    difficulty: "easy",
-    ageGroups: ["teens", "adults"]
-  },
-  {
-    id: uuidv4(),
     text: "Which fruit is known for keeping the doctor away if eaten daily?",
     options: ["Banana", "Apple", "Orange", "Mango"],
     correctAnswer: 1,
@@ -245,16 +186,6 @@ export const easyQuestions: Question[] = [
   },
   {
     id: uuidv4(),
-    text: "How many continents are there in the world?",
-    options: ["5", "6", "7", "8"],
-    correctAnswer: 2,
-    explanation: "There are 7 continents: Asia, Africa, North America, South America, Antarctica, Europe, and Australia.",
-    topic: "geography",
-    difficulty: "easy",
-    ageGroups: ["teens", "adults"]
-  },
-  {
-    id: uuidv4(),
     text: "Which month comes after September?",
     options: ["October", "August", "November", "December"],
     correctAnswer: 0,
@@ -282,16 +213,6 @@ export const easyQuestions: Question[] = [
     topic: "general knowledge",
     difficulty: "easy",
     ageGroups: ["kids", "teens"]
-  },
-  {
-    id: uuidv4(),
-    text: "What do bees make?",
-    options: ["Silk", "Honey", "Wax", "Milk"],
-    correctAnswer: 1,
-    explanation: "Bees produce honey from nectar collected from flowers.",
-    topic: "science",
-    difficulty: "easy",
-    ageGroups: ["kids"]
   },
   {
     id: uuidv4(),
@@ -545,16 +466,6 @@ export const easyQuestions: Question[] = [
   },
   {
     id: uuidv4(),
-    text: "What do bees make?",
-    options: ["Milk", "Wax", "Honey", "Bread"],
-    correctAnswer: 2,
-    explanation: "Bees make honey from nectar.",
-    topic: "science",
-    difficulty: "easy",
-    ageGroups: ["kids"]
-  },
-  {
-    id: uuidv4(),
     text: "Which part of the plant is usually underground?",
     options: ["Leaves", "Stem", "Flowers", "Roots"],
     correctAnswer: 3,
@@ -562,16 +473,6 @@ export const easyQuestions: Question[] = [
     topic: "science",
     difficulty: "easy",
     ageGroups: ["kids"]
-  },
-  {
-    id: uuidv4(),
-    text: "How many continents are there in the world?",
-    options: ["5", "6", "7", "8"],
-    correctAnswer: 2,
-    explanation: "There are 7 continents: Asia, Africa, North America, South America, Antarctica, Europe, and Australia.",
-    topic: "geography",
-    difficulty: "easy",
-    ageGroups: ["teens", "adults"]
   },
   {
     id: uuidv4(),
@@ -602,16 +503,6 @@ export const easyQuestions: Question[] = [
     topic: "computers",
     difficulty: "easy",
     ageGroups: ["teens"]
-  },
-  {
-    id: uuidv4(),
-    text: "Which number comes after 99?",
-    options: ["100", "101", "99.5", "98"],
-    correctAnswer: 0,
-    explanation: "100 comes after 99.",
-    topic: "math",
-    difficulty: "easy",
-    ageGroups: ["kids"]
   },
   {
     id: uuidv4(),
@@ -652,16 +543,6 @@ export const easyQuestions: Question[] = [
     topic: "science",
     difficulty: "easy",
     ageGroups: ["kids"]
-  },
-  {
-    id: uuidv4(),
-    text: "What is the currency of the United States?",
-    options: ["Euro", "Dollar", "Pound", "Yen"],
-    correctAnswer: 1,
-    explanation: "The U.S. currency is called the Dollar.",
-    topic: "general knowledge",
-    difficulty: "easy",
-    ageGroups: ["teens", "adults"]
   },
   {
     id: uuidv4(),
@@ -2215,16 +2096,7 @@ export const easyQuestions: Question[] = [
   difficulty: "hard",
   ageGroups: ["teens", "adults"]
 },
-{
-  id: uuidv4(),
-  text: "Which planet is known as the Red Planet?",
-  options: ["Mars", "Venus", "Jupiter", "Saturn"],
-  correctAnswer: 0,
-  explanation: "Mars is called the Red Planet due to iron oxide.",
-  topic: "astronomy",
-  difficulty: "hard",
-  ageGroups: ["teens", "adults"]
-},
+
 {
   id: uuidv4(),
   text: "Who composed the classical piece 'Four Seasons'?",
@@ -2917,16 +2789,6 @@ export const easyQuestions: Question[] = [
 },
 {
   id: uuidv4(),
-  text: "Which planet is known as the Red Planet?",
-  options: ["Mars", "Venus", "Jupiter", "Saturn"],
-  correctAnswer: 0,
-  explanation: "Mars is often called the Red Planet due to its reddish appearance.",
-  topic: "astronomy",
-  difficulty: "hard",
-  ageGroups: ["teens", "adults"]
-},
-{
-  id: uuidv4(),
   text: "What is the main function of white blood cells?",
   options: ["Carry oxygen", "Fight infections", "Clot blood", "Provide energy"],
   correctAnswer: 1,
@@ -2962,16 +2824,6 @@ export const easyQuestions: Question[] = [
   correctAnswer: 2,
   explanation: "12 × 12 = 144, so the square root of 144 is 12.",
   topic: "math",
-  difficulty: "hard",
-  ageGroups: ["teens", "adults"]
-},
-{
-  id: uuidv4(),
-  text: "Who was the first Prime Minister of India?",
-  options: ["Jawaharlal Nehru", "Mahatma Gandhi", "Indira Gandhi", "Subhash Chandra Bose"],
-  correctAnswer: 0,
-  explanation: "Jawaharlal Nehru was the first Prime Minister of independent India.",
-  topic: "indian history",
   difficulty: "hard",
   ageGroups: ["teens", "adults"]
 },
@@ -3472,16 +3324,6 @@ export const easyQuestions: Question[] = [
   correctAnswer: 0,
   explanation: "Table salt is sodium chloride, NaCl.",
   topic: "chemistry",
-  difficulty: "hard",
-  ageGroups: ["teens", "adults"]
-},
-{
-  id: uuidv4(),
-  text: "Which planet is known as the Red Planet?",
-  options: ["Venus", "Mars", "Jupiter", "Mercury"],
-  correctAnswer: 1,
-  explanation: "Mars is often called the Red Planet due to its reddish appearance.",
-  topic: "astronomy",
   difficulty: "hard",
   ageGroups: ["teens", "adults"]
 },
@@ -4247,16 +4089,6 @@ export const easyQuestions: Question[] = [
 },
 {
   id: uuidv4(),
-  text: "Which planet is known as the Red Planet?",
-  options: ["Venus", "Mars", "Jupiter", "Saturn"],
-  correctAnswer: 1,
-  explanation: "Mars is known as the Red Planet.",
-  topic: "astronomy",
-  difficulty: "hard",
-  ageGroups: ["teens", "adults"]
-},
-{
-  id: uuidv4(),
   text: "What is the boiling point of water in Celsius?",
   options: ["90°C", "100°C", "110°C", "120°C"],
   correctAnswer: 1,
@@ -4937,16 +4769,6 @@ export const easyQuestions: Question[] = [
 },
 {
   id: uuidv4(),
-  text: "Which planet is known as the Red Planet?",
-  options: ["Venus", "Mars", "Jupiter", "Saturn"],
-  correctAnswer: 1,
-  explanation: "Mars is called the Red Planet due to its reddish appearance.",
-  topic: "astronomy",
-  difficulty: "hard",
-  ageGroups: ["teens", "adults"]
-},
-{
-  id: uuidv4(),
   text: "What is the chemical formula of water?",
   options: ["H2O", "CO2", "O2", "NaCl"],
   correctAnswer: 0,
@@ -5042,16 +4864,6 @@ export const easyQuestions: Question[] = [
   correctAnswer: 1,
   explanation: "Thermometer measures temperature.",
   topic: "science",
-  difficulty: "hard",
-  ageGroups: ["teens", "adults"]
-},
-{
-  id: uuidv4(),
-  text: "What is the capital city of Japan?",
-  options: ["Seoul", "Tokyo", "Beijing", "Bangkok"],
-  correctAnswer: 1,
-  explanation: "Tokyo is the capital of Japan.",
-  topic: "geography",
   difficulty: "hard",
   ageGroups: ["teens", "adults"]
 },
@@ -5447,16 +5259,6 @@ export const easyQuestions: Question[] = [
 },
 {
   id: uuidv4(),
-  text: "Who was the first Prime Minister of India?",
-  options: ["Jawaharlal Nehru", "Sardar Patel", "Indira Gandhi", "Rajendra Prasad"],
-  correctAnswer: 0,
-  explanation: "Jawaharlal Nehru was the first Prime Minister of India.",
-  topic: "india special",
-  difficulty: "hard",
-  ageGroups: ["teens", "adults"]
-},
-{
-  id: uuidv4(),
   text: "Which vitamin is produced when a person is exposed to sunlight?",
   options: ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
   correctAnswer: 3,
@@ -5702,16 +5504,6 @@ export const easyQuestions: Question[] = [
   correctAnswer: 0,
   explanation: "India gained independence in 1947.",
   topic: "india special",
-  difficulty: "hard",
-  ageGroups: ["teens", "adults"]
-},
-{
-  id: uuidv4(),
-  text: "Which planet is known as the Red Planet?",
-  options: ["Mars", "Jupiter", "Venus", "Saturn"],
-  correctAnswer: 0,
-  explanation: "Mars is known as the Red Planet due to its iron oxide surface.",
-  topic: "astronomy",
   difficulty: "hard",
   ageGroups: ["teens", "adults"]
 },
